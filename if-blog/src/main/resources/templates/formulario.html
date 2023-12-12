@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />	
+    <style>
+		body {
+    background-image: url("https://ifce.edu.br/acarau/Imagens/galeria_fotos/historico/faccamp.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+ 
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 25px; 
+    margin-top: 5%;
+}
+
+img{
+    height: 30%;
+    width: 130px;
+}
+
+.backgroundvisual {
+    position:absolute;
+    background-color: rgba(0, 10, 0, 0.5);
+	width:100%;
+	height:100%;
+	background-size: 100%;
+
+}
+
+.form-label {
+    color: green;
+}
+	</style>
+</head>
+
+<body>
+	<form action="/autor/salvar" method="POST">
+		<div class="backgroundvisual">
+  <div class="container w-25 p-5">
+  <form>
+
+    <div class="mb-4">
+      <img src="https://raw.githubusercontent.com/gabriel-vasconcelos-ft/ifBlog/main/img/logo.png" alt=""></img>
+    </div>
+
+  <div class="form-label">
+    <h5>CADASTRO</h5>
+    <small id="cadastroID" class="form-text text-muted"> Por favor preencha o dados abaixo para realizar seu cadastro no blog</small>
+  </div>
+
+  <div class="form-group mb-3 ">
+    <input type="label" name="nome" class="form-control" id="nomeID" aria-describedby="emailHelp" placeholder="Nome"></input>
+  </div>
+  <div class="form-group mb-3 ">
+    <input type="number" name="matricula" class="form-control" id="matriculaID" aria-describedby="emailHelp" placeholder="Matrícula"></input>
+  </div>
+  <div class="form-group mb-3 ">
+    <input type="email" name="email" class="form-control" id="emailID" aria-describedby="emailHelp" placeholder="E-mail Institucional"></input>
+  </div>
+  <div class="form-group mb-3 ">
+    <input type="password" name="senha" class="form-control" id="senhaID" placeholder="Senha"></input>
+  </div>
+  <div class="form-group mb-4 ">
+    <input type="password" name="confirmar" class="form-control" id="confID" placeholder="Confirmar Senha"></input>
+  </div>
+  
+  <div class="custom-file mb-4">
+    <input type="file" class="custom-file-input" id="customFile"></input>
+  </div>
+
+  <button type="submit" class="btn btn-outline-success">Cadastrar</button>
+    </form>
+    </div>
+  </div>
+    
+</body>
+</html>
