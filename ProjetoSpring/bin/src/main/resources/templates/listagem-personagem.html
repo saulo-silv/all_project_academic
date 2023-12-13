@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> 
+
+<head>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <meta charset="UTF-8">
+    
+   
+    <title>listaPersonagens</title>
+    
+</head>
+<body>
+	<table class="table">
+     	<thead>
+				<tr>
+						<th>Id</th>
+						<th>Nome</th>
+						<th>Ator</th>
+						<th>Idade</th>
+						
+				</tr>
+		</thead>
+		<tbody>
+		<tr th:each = "personagem: ${listaPersonagens}">
+				<td th:text="${personagem.id}"></td>
+				<td th:text="${personagem.nome}"></td>
+				<td th:text="${personagem.ator}"></td>
+				<td th:text="${personagem.idade}"></td>
+				<td> <a th:href="@{/personagem/excluir/{id}(id = ${personagem.id})}" class="btn btn-danger"> Excluir
+					</a></td>
+				
+				
+		</tr>
+   		</tbody>
+	</table>
+  
+<script src="/js/bootstrap.min.js"> </script>
+</body>
+</html>

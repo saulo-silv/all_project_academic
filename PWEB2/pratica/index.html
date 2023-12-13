@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-switch">
+        <label class="switch">
+            <input id="dark-mode" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div class="lista_de_tarefas">
+        <h1>Lista de tarefas</h1>
+        <form>
+            <label for="tarefa">Nova Tarefa</label>
+            <input type="text" id="tarefa" autocomplete="off" placeholder="Insira aqui uma tarefa">
+            <button type="submit" id="add_tarefa"><span>Nova Tarefa</span><i class="fa fa-plus-square"></i></button>
+        </form>
+        <div class="listas">
+            <h2 id="titulo-a-fazer">A fazer</h2>
+            <ul id="a-fazer">
+                <li class="lista-vazia"><i class="fa fa-file-text"></i> Adicione tarefas à lista</li>
+            </ul>
+        </div>
+        <div class="listas">
+            <h2 id="titulo-feito">Feito</h2>
+            <ul id="feito">
+                <li class="lista-vazia"><i class="fa fa-file-text-o"></i> Nenhuma tarefa concluída</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <h1><span>Criado por </span></h1>
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/saulo-silv" data-size="large" data-show-count="true" aria-label="Follow @saulo-silv-36365-3636 on GitHub">@saulo-silv</a>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

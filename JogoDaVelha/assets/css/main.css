@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #00d2ff 0%, #3a47d5 100%);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+#game {
+  padding: 40px;
+  min-height: 800px;
+  height: 100vh;
+}
+#game header {
+  text-align: center;
+  color: #ffffff;
+}
+#game header button {
+  margin: 20px;
+  padding: 10px 20px;
+}
+#tabuleiro {
+  background: #ffffff;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 15px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  width: 350px;
+}
+#tabuleiro ul {
+  padding: 0;
+  min-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#tabuleiro .casa {
+  font-size: 0;
+  display: inline-block;
+  margin: 0;
+  width: 100px;
+  height: 100px;
+  background-image: url('../images/ox.png');
+  background-size: cover;
+  padding: 20px;
+  border-right: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+  cursor: pointer;
+}
+#tabuleiro .casa.o {
+  background-position-x: 0; 
+}
+#tabuleiro .casa.x {
+  background-position-x: 96px 
+}
+
+#tabuleiro .casa.v {
+  background-image: url('../images/vazio.png'); 
+}
+
+#tabuleiro .casa:nth-child(3n) {
+  border-right: none !important;
+}
+#tabuleiro .casa:nth-child(n+7) {
+  border-bottom: none !important;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+footer p {
+  width: 40%;
+  min-width: 150px;
+  padding: 0 20px;
+  display: inline-block; 
+  text-align: left;
+  font-weight: 500;
+}
+footer #pontos_player_1 {
+  text-align: right!important;
+  border-right: 1px solid #ffffff;
+}
+footer p span {
+  display: block;
+  font-size:2.5rem;
+}
